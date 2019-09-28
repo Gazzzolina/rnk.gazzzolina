@@ -1,0 +1,20 @@
+export default (dnk) => {
+
+let rnk = "";
+for (let i = 0; i < dnk.length; i += 1) {
+if (dnk.length === 0) {
+return '';
+} else if (dnk[i] === "G") {
+rnk += "C";
+} else if (dnk[i] === "C") {
+rnk += "G";
+} else if (dnk[i] === "T") {
+rnk += "A";
+} else if (dnk[i] === "A") {
+rnk += "U";
+} else {
+return null;
+}
+}
+return rnk;
+}
